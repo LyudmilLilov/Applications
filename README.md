@@ -1,3 +1,3 @@
 Applications:
 
--Calculator🖩
+-Calculator🧮
