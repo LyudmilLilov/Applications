@@ -11,7 +11,12 @@ class Calendar:
             self.events[event_date] = [event_description]
 
     def view_events(self, event_date):
-        pass
+        if event_date in self.events:
+            print(f"Events on {event_date}:")
+            for event in self.events[event_date]:
+                print(f"- {event}")
+        else:
+            print(f"No events on {event_date}")
 
 def main():
     my_calendar = Calendar()
