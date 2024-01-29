@@ -5,7 +5,10 @@ class Calendar:
         self.events = {}
 
     def add_event(self, event_date, event_description):
-        pass
+        if event_date in self.events:
+            self.events[event_date].append(event_description)
+        else:
+            self.events[event_date] = [event_description]
 
     def view_events(self, event_date):
         pass
