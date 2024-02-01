@@ -14,7 +14,11 @@ def fetch_user_repositories(username):
 
 
 def display_repository_info(repositories):
-    pass
+    for repo in repositories:
+        print("\nRepository Name:", repo["name"])
+        print("Description:", repo["description"])
+        print("Language:", repo["language"])
+        print("Stars:", repo["stargazers_count"])
 
 
 def main():
