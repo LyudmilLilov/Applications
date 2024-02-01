@@ -22,7 +22,14 @@ def display_repository_info(repositories):
 
 
 def main():
-    pass
+    username = input("Enter GitHub username: ")
+
+    repositories = fetch_user_repositories(username)
+
+    if repositories:
+        display_repository_info(repositories)
+    else:
+        print("No repositories found or error occurred.")
 
 
 if __name__ == "__main__":
